@@ -119,8 +119,8 @@ diagnosticMode:
 ##
 image:
   registry: docker.io
-  repository: bitnami/mongodb
-  tag: 7.0.2-debian-11-r0
+  repository: arm64v8/mongo
+  tag: latest
   digest: ""
   ## Specify a imagePullPolicy
   ## ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
@@ -1042,7 +1042,7 @@ persistence:
   ## @param persistence.mountPath Path to mount the volume at
   ## MongoDB(&reg;) images.
   ##
-  mountPath: /bitnami/mongodb
+  mountPath: /data/db
   ## @param persistence.subPath Subdirectory of the volume to mount at
   ## and one PV for multiple services.
   ##
