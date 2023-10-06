@@ -117,9 +117,16 @@ diagnosticMode:
 ## @param image.pullSecrets Specify docker-registry secret names as an array
 ## @param image.debug Set to true if you would like to see extra information on logs
 ##
+## Comment/Uncomment this for amd64 arch
+# image:
+#   registry: docker.io
+#   repository: bitnami/mongodb
+#   tag: 7.0.2-debian-11-r0
+
+## Comment/Uncomment this for arm64 arch
 image:
-  registry: docker.io
-  repository: arm64v8/mongo
+  registry: ghcr.io
+  repository: zcube/bitnami-compat/mongodb
   tag: latest
   digest: ""
   ## Specify a imagePullPolicy
