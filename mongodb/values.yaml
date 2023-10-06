@@ -127,7 +127,7 @@ diagnosticMode:
 image:
   registry: ghcr.io
   repository: zcube/bitnami-compat/mongodb
-  tag: latest
+  tag: 6.0
   digest: ""
   ## Specify a imagePullPolicy
   ## ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
