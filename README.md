@@ -1,6 +1,7 @@
 <!--- app-name: MongoDB&reg; -->
 
 # MongoDB(R) packaged by Bitnami
+# Comment:
 
 MongoDB(R) is a relational open source NoSQL database. Easy to use, it stores data in JSON-like documents. Automated scalability and high-performance. Ideal for developing cloud native applications.
 
