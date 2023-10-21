@@ -399,7 +399,74 @@ existingConfigmap: ""
 ##      #!/bin/bash
 ##      echo "Do something."
 ##
-initdbScripts: {}
+initdbScripts:
+  my_init_script.js: |
+    db = db.getSiblingDB("cob");
+    db.image_builder.drop();
+    
+    db.challenge_builder.drop();
+    db.process_engine.drop();
+
+    db.image_builder.insertMany([
+      {
+        corId: "im123",
+        creatorName: "cs302",
+        imageName: "first_image",
+        imageRegistryLink: "gitlab.com/first_image:latest",
+        s3Path: "path/first_image.txt"
+      },
+      {
+        corId: "im124",
+        creatorName: "cs302",
+        imageName: "another_image",
+        imageRegistryLink: "gitlab.com/another_image:latest",
+        s3Path: "path/second_image.txt"
+      },
+    ]);
+
+    db.challenge_builder.insertMany([
+      {
+        corId: "cb123",
+        creatorName: "cs302",
+        challengeName: "first_challenge",
+        imageName: "first_image",
+        participants: [
+          {email: "abc@zxc.com", status: false},
+          {email: "zxc@google.com", status: false},
+          {email: "dontdie@me.com", status: false}
+        ]
+      },
+      {
+        corId: "cb124",
+        creatorName: "cs302",
+        challengeName: "second_challenge",
+        imageName: "another_image",
+        participants: [
+          {email: "abc@zxc.com", status: false},
+          {email: "zxc@google.com", status: false},
+          {email: "dontdie@me.com", status: false}
+        ]
+      },
+    ]);
+
+    db.process_engine.insertMany([
+      {
+        corId: "pe123",
+        creatorName: "cs302",
+        imageName: "first_image",
+        s3Path: "path/first_image.txt",
+        eventSuccess: true,
+        timestamp: new Date("2023-10-21T10:00:53.805Z"),
+      },
+      {
+        corId: "pe124",
+        creatorName: "cs302",
+        imageName: "another_image",
+        s3Path: "path/another_image.txt",
+        eventSuccess: true,
+        timestamp: new Date("2023-10-21T10:00:53.805Z"),
+      }
+    ]);
 ## @param initdbScriptsConfigMap Existing ConfigMap with custom initdb scripts
 ##
 initdbScriptsConfigMap: ""
@@ -1155,14 +1222,14 @@ backup:
       ## @param backup.cronjob.storage.accessModes PV Access Mode
       ##
       accessModes:
-       - ReadWriteOnce
+        - ReadWriteOnce
       ## @param backup.cronjob.storage.size PVC Storage Request for the backup data volume
       ##
       size: 8Gi
       ## @param backup.cronjob.storage.annotations PVC annotations
       ##
       annotations: {}
-      ## @param backup.cronjob.storage.mountPath Path to mount the volume at 
+      ## @param backup.cronjob.storage.mountPath Path to mount the volume at
       ##
       mountPath: /backup/mongodb
       ## @param backup.cronjob.storage.subPath Subdirectory of the volume to mount at
