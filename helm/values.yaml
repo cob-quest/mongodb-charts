@@ -432,7 +432,7 @@ initdbScripts:
       {"corId": "653b2e8cea6d1925edee637a", "creatorName": "cs302", "imageName": "image_4", "event": "Image Created", "eventSuccess": true, "timestamp": "2023-10-27 13:03:22.954695"}, 
       {"corId": "653b2e8cea6d1925edee637b", "creatorName": "cs302", "imageName": "image_5", "event": "Image Created", "eventSuccess": true, "timestamp": "2023-10-27 13:03:22.954690"}, 
       {"corId": "653b2e8cea6d1925edee637c", "creatorName": "cs302", "imageName": "image_6", "event": "Image Created", "eventSuccess": true, "timestamp": "2023-10-27 13:03:22.954694"}, 
-      {"corId": "653b2e8cea6d1925edee637d", "creatorName": "cs302", "imageName": "image_7", "event": "Failed to create", "eventSuccess": false, "timestamp": "2023-10-27 13:03:22.954691"}, 
+      {"corId": "653b2e8cea6d1925edee637d", "creatorName": "cs302", "imageName": "image_7", "event": "Failed to create image", "eventSuccess": false, "timestamp": "2023-10-27 13:03:22.954691"}, 
       {"corId": "653b2e8cea6d1925edee637e", "creatorName": "cs302", "imageName": "image_8", "event": "Received trigger to start image creation", "eventSuccess": false, "timestamp": "2023-10-27 13:03:22.954698"}, 
       {"corId": "653b2e8cea6d1925edee637f", "creatorName": "cs302", "imageName": "image_9", "event": "Received trigger to start image creation", "eventSuccess": false, "timestamp": "2023-10-27 13:03:22.954699"},
       {"corId": "653b4c0fb1a622bea03dae3b", "creatorName": "cs302", "imageName": "image_0", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "event": "Received trigger to start challenge creation", "assignmentId": "653b4c0fb1a622bea03dae3c", "timestamp": "2023-10-27 13:35:11.049563"}, 
