@@ -408,13 +408,13 @@ initdbScripts:
     db.attempt.drop();
 
     db.image_builder.insertMany([
-      {"corId": "653b2e8cea6d1925edee6376", "creatorName": "cs302", "imageName": "image_0", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_0.txt"}, 
-      {"corId": "653b2e8cea6d1925edee6377", "creatorName": "cs302", "imageName": "image_1", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_1.txt"}, 
-      {"corId": "653b2e8cea6d1925edee6378", "creatorName": "cs302", "imageName": "image_2", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_2.txt"}, 
-      {"corId": "653b2e8cea6d1925edee6379", "creatorName": "cs302", "imageName": "image_3", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_3.txt"}, 
-      {"corId": "653b2e8cea6d1925edee637a", "creatorName": "cs302", "imageName": "image_4", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_4.txt"}, 
-      {"corId": "653b2e8cea6d1925edee637b", "creatorName": "cs302", "imageName": "image_5", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_5.txt"}, 
-      {"corId": "653b2e8cea6d1925edee637c", "creatorName": "cs302", "imageName": "image_6", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_6.txt"}, 
+      {"corId": "653b2e8cea6d1925edee6376", "creatorName": "cs302", "imageName": "image_0", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_0.txt", "imageTag":"tag1"}, 
+      {"corId": "653b2e8cea6d1925edee6377", "creatorName": "cs302", "imageName": "image_1", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_1.txt", "imageTag":"tag2"}, 
+      {"corId": "653b2e8cea6d1925edee6378", "creatorName": "cs302", "imageName": "image_2", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_2.txt", "imageTag":"tag3"}, 
+      {"corId": "653b2e8cea6d1925edee6379", "creatorName": "cs302", "imageName": "image_3", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_3.txt", "imageTag":"tag4"}, 
+      {"corId": "653b2e8cea6d1925edee637a", "creatorName": "cs302", "imageName": "image_4", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_4.txt", "imageTag":"tag5"}, 
+      {"corId": "653b2e8cea6d1925edee637b", "creatorName": "cs302", "imageName": "image_5", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_5.txt", "imageTag":"tag6"}, 
+      {"corId": "653b2e8cea6d1925edee637c", "creatorName": "cs302", "imageName": "image_6", "imageRegistryLink": "https://registry.gitlab.com/cs302-2023/g3-team8/project/image-builder-service/clitest:latest", "s3Path": "path/image_6.txt", "imageTag":"tag7"}, 
     ]);
 
     db.challenge.insertMany([
