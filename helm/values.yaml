@@ -405,24 +405,25 @@ initdbScripts:
     db.image_builder.drop();
     db.challenge.drop();
     db.process_engine.drop();
+    db.attempt.drop();
 
     db.image_builder.insertMany([
-      {"corId": "653b2e8cea6d1925edee6376", "creatorName": "cs302", "imageName": "image_0", "imageRegistryLink": "gitlab.com/image_0:latest", "s3Path": "path/image_0.txt"}, 
-      {"corId": "653b2e8cea6d1925edee6377", "creatorName": "cs302", "imageName": "image_1", "imageRegistryLink": "gitlab.com/image_1:latest", "s3Path": "path/image_1.txt"}, 
-      {"corId": "653b2e8cea6d1925edee6378", "creatorName": "cs302", "imageName": "image_2", "imageRegistryLink": "gitlab.com/image_2:latest", "s3Path": "path/image_2.txt"}, 
-      {"corId": "653b2e8cea6d1925edee6379", "creatorName": "cs302", "imageName": "image_3", "imageRegistryLink": "gitlab.com/image_3:latest", "s3Path": "path/image_3.txt"}, 
-      {"corId": "653b2e8cea6d1925edee637a", "creatorName": "cs302", "imageName": "image_4", "imageRegistryLink": "gitlab.com/image_4:latest", "s3Path": "path/image_4.txt"}, 
-      {"corId": "653b2e8cea6d1925edee637b", "creatorName": "cs302", "imageName": "image_5", "imageRegistryLink": "gitlab.com/image_5:latest", "s3Path": "path/image_5.txt"}, 
-      {"corId": "653b2e8cea6d1925edee637c", "creatorName": "cs302", "imageName": "image_6", "imageRegistryLink": "gitlab.com/image_6:latest", "s3Path": "path/image_6.txt"}, 
+      {"corId": "653b2e8cea6d1925edee6376", "creatorName": "cs302", "imageName": "image_0", "imageTag": "latest", "imageRegistryLink": "gitlab.com/image_0:latest"}, 
+      {"corId": "653b2e8cea6d1925edee6377", "creatorName": "cs302", "imageName": "image_1", "imageTag": "latest", "imageRegistryLink": "gitlab.com/image_1:latest"}, 
+      {"corId": "653b2e8cea6d1925edee6378", "creatorName": "cs302", "imageName": "image_2", "imageTag": "latest", "imageRegistryLink": "gitlab.com/image_2:latest"}, 
+      {"corId": "653b2e8cea6d1925edee6379", "creatorName": "cs302", "imageName": "image_3", "imageTag": "latest", "imageRegistryLink": "gitlab.com/image_3:latest"}, 
+      {"corId": "653b2e8cea6d1925edee637a", "creatorName": "cs302", "imageName": "image_4", "imageTag": "latest", "imageRegistryLink": "gitlab.com/image_4:latest"}, 
+      {"corId": "653b2e8cea6d1925edee637b", "creatorName": "cs302", "imageName": "image_5", "imageTag": "latest", "imageRegistryLink": "gitlab.com/image_5:latest"}, 
+      {"corId": "653b2e8cea6d1925edee637c", "creatorName": "cs302", "imageName": "image_6", "imageTag": "latest", "imageRegistryLink": "gitlab.com/image_6:latest"}, 
     ]);
 
     db.challenge.insertMany([
-      {"challengeName": "challenge_1", "corId": "653b4c0fb1a622bea03dae3b", "creatorName": "cs302", "imageName": "image_0", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "assignmentId": "653b4c0fb1a622bea03dae3c"}, 
-      {"challengeName": "challenge_2", "corId": "653b4c0fb1a622bea03dae3d", "creatorName": "cs302", "imageName": "image_1", "duration": 65, "participants": ["challenger77@google.com", "challenger45@google.com", "challenger34@google.com"], "assignmentId": "653b4c0fb1a622bea03dae3e"}, 
-      {"challengeName": "challenge_3", "corId": "653b4c0fb1a622bea03dae3f", "creatorName": "cs302", "imageName": "image_2", "duration": 70, "participants": ["challenger98@google.com", "challenger17@google.com", "challenger60@google.com"], "assignmentId": "653b4c0fb1a622bea03dae40"}, 
-      {"challengeName": "challenge_4", "corId": "653b4c0fb1a622bea03dae41", "creatorName": "cs302", "imageName": "image_3", "duration": 75, "participants": ["challenger48@google.com", "challenger47@google.com", "challenger93@google.com"], "assignmentId": "653b4c0fb1a622bea03dae42"},
-      {"challengeName": "challenge_5", "corId": "653b4c0fb1a622bea03dae43", "creatorName": "cs302", "imageName": "image_4", "duration": 80, "participants": ["challenger28@google.com", "challenger90@google.com", "challenger40@google.com"], "assignmentId": "653b4c0fb1a622bea03dae44"}]
-    );
+      {"challengeName": "challenge_1", "corId": "653b4c0fb1a622bea03dae3b", "creatorName": "cs302", "imageName": "image_0", "imageTag": "latest", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"]}, 
+      {"challengeName": "challenge_2", "corId": "653b4c0fb1a622bea03dae3d", "creatorName": "cs302", "imageName": "image_1", "imageTag": "latest", "duration": 65, "participants": ["challenger77@google.com", "challenger45@google.com", "challenger34@google.com"]}, 
+      {"challengeName": "challenge_3", "corId": "653b4c0fb1a622bea03dae3f", "creatorName": "cs302", "imageName": "image_2", "imageTag": "latest", "duration": 70, "participants": ["challenger98@google.com", "challenger17@google.com", "challenger60@google.com"]}, 
+      {"challengeName": "challenge_4", "corId": "653b4c0fb1a622bea03dae41", "creatorName": "cs302", "imageName": "image_3", "imageTag": "latest", "duration": 75, "participants": ["challenger48@google.com", "challenger47@google.com", "challenger93@google.com"]},
+      {"challengeName": "challenge_5", "corId": "653b4c0fb1a622bea03dae43", "creatorName": "cs302", "imageName": "image_4", "imageTag": "latest", "duration": 80, "participants": ["challenger28@google.com", "challenger90@google.com", "challenger40@google.com"]}
+    ]);
 
     db.process_engine.insertMany([
       {"corId": "653b2e8cea6d1925edee6376", "creatorName": "cs302", "imageName": "image_0", "event": "Image Created", "eventSuccess": true, "timestamp": new Date("2023-10-27 13:03:22.954692")}, 
@@ -440,6 +441,12 @@ initdbScripts:
       {"corId": "653b4c0fb1a622bea03dae3f", "creatorName": "cs302", "imageName": "image_2", "duration": 70, "participants": ["challenger98@google.com", "challenger17@google.com", "challenger60@google.com"], "event": "Received trigger to start challenge creation", "assignmentId": "653b4c0fb1a622bea03dae40", "timestamp": new Date("2023-10-27 13:35:11.049582")}, 
       {"corId": "653b4c0fb1a622bea03dae41", "creatorName": "cs302", "imageName": "image_3", "duration": 75, "participants": ["challenger48@google.com", "challenger47@google.com", "challenger93@google.com"], "event": "Received trigger to start challenge creation", "assignmentId": "653b4c0fb1a622bea03dae42", "timestamp": new Date("2023-10-27 13:35:11.049590")},
       {"corId": "653b4c0fb1a622bea03dae43", "creatorName": "cs302", "imageName": "image_4", "duration": 80, "participants": ["challenger28@google.com", "challenger90@google.com", "challenger40@google.com"], "event": "Received trigger to start challenge creation", "assignmentId": "653b4c0fb1a622bea03dae44", "timestamp": new Date("2023-10-27 13:35:11.049595")}
+    ]);
+
+    db.attempt.insertMany([
+      {"challengeName": "Math Challenge", "creatorName": "John Doe", "participant": "Alice Smith", "token": "abcd1234", "imageRegistryLink": gitlab.com/image_0:latest", "sshkey": "ssh-rsa AAA...xyz", "result": 95.5, "ipaddress": "192.168.1.1", "port": "8080" },
+      {"challengeName": "Coding Challenge", "creatorName": "Jane Smith", "participant": "Bob Brown", "token": "efgh5678", "imageRegistryLink": gitlab.com/image_1:latest", "sshkey": "ssh-rsa BBB...zzz", "result": 88.7, "ipaddress": "192.168.1.2", "port": "8081" },
+      {"challengeName": "Science Challenge", "creatorName": "Charlie Green", "participant": "Daisy Blue", "token": "ijkl9012", "imageRegistryLink": gitlab.com/image_2:latest", "sshkey": "ssh-rsa CCC...yyy", "result": 78.4, "ipaddress": "192.168.1.3", "port": "8082" }
     ]);
 ## @param initdbScriptsConfigMap Existing ConfigMap with custom initdb scripts
 ##
