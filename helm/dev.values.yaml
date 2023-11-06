@@ -432,10 +432,10 @@ initdbScripts:
     ]);
 
     db.process_engine.insertMany([
-      {"corId": "653b2e8cea6d1925edee6376", "creatorName": "cs302", "imageName": "image_0", "event": "imageCreate", "eventStatus": "imageCreating", "timestamp": {"year": 2023,"month": 11,"day": 3,"hours": 2,"minutes": 0,"seconds": 13,"nanos": 294758750,"timeoffset": null}},
+      {"corId": "653b2e8cea6d1925edee6376", "creatorName": "cs302", "imageName": "image_0", "imageTag": "latest", "event": "imageCreate", "eventStatus": "imageCreating", "timestamp": {"year": 2023,"month": 11,"day": 3,"hours": 2,"minutes": 0,"seconds": 13,"nanos": 294758750,"timeoffset": null}},
       {"corId": "653b2e8cea6d1925edee6376", "event": "imageCreate", "eventStatus": "imageCreated", "timestamp": {"year": 2023,"month": 11,"day": 3,"hours": 2,"minutes": 1,"seconds": 13,"nanos": 294758750,"timeoffset": null}},
 
-      {"corId": "653b2e8cea6d1925edee6377", "creatorName": "cs302", "imageName": "image_1", "event": "imageCreate", "eventStatus": "imageCreating", "timestamp": {"year": 2023,"month": 11,"day": 3,"hours": 3,"minutes": 0,"seconds": 13,"nanos": 294758750,"timeoffset": null}},
+      {"corId": "653b2e8cea6d1925edee6377", "creatorName": "cs302", "imageName": "image_1", "imageTag": "latest", "event": "imageCreate", "eventStatus": "imageCreating", "timestamp": {"year": 2023,"month": 11,"day": 3,"hours": 3,"minutes": 0,"seconds": 13,"nanos": 294758750,"timeoffset": null}},
       {"corId": "653b2e8cea6d1925edee6377", "event": "imageCreate", "eventStatus": "imageCreateFailed", "timestamp": {"year": 2023,"month": 11,"day": 3,"hours": 3,"minutes": 1,"seconds": 13,"nanos": 294758750,"timeoffset": null}},
 
 
