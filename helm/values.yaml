@@ -417,18 +417,18 @@ initdbScripts:
     ]);
 
     db.challenge.insertMany([
-      {"cordId": "653b2e8cea6d1925edee637d", "creatorName": "cs302", "challengeName": "challenge_0", "imageName": "image_0", "imageTag": "latest", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "imageRegistryLink": "gitlab.com/image_0:latest"},
+      {"corId": "653b2e8cea6d1925edee637d", "creatorName": "cs302", "challengeName": "challenge_0", "imageName": "image_0", "imageTag": "latest", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "imageRegistryLink": "gitlab.com/image_0:latest"},
 
-      {"cordId": "1234", "creatorName": "cs302", "challengeName": "challenge_1", "imageName": "image_1", "imageTag": "latest", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "imageRegistryLink": "gitlab.com/image_2:latest"},
-      {"cordId": "1235", "creatorName": "cs302", "challengeName": "challenge_2", "imageName": "image_2", "imageTag": "latest", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "imageRegistryLink": "gitlab.com/image_3:latest"},
-      {"cordId": "1236", "creatorName": "cs302", "challengeName": "challenge_3", "imageName": "image_3", "imageTag": "latest", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "imageRegistryLink": "gitlab.com/image_4:latest"},
-      {"cordId": "1237", "creatorName": "cs302", "challengeName": "challenge_4", "imageName": "image_4", "imageTag": "latest", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "imageRegistryLink": "gitlab.com/image_5:latest"},
+      {"corId": "1234", "creatorName": "cs302", "challengeName": "challenge_1", "imageName": "image_1", "imageTag": "latest", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "imageRegistryLink": "gitlab.com/image_2:latest"},
+      {"corId": "1235", "creatorName": "cs302", "challengeName": "challenge_2", "imageName": "image_2", "imageTag": "latest", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "imageRegistryLink": "gitlab.com/image_3:latest"},
+      {"corId": "1236", "creatorName": "cs302", "challengeName": "challenge_3", "imageName": "image_3", "imageTag": "latest", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "imageRegistryLink": "gitlab.com/image_4:latest"},
+      {"corId": "1237", "creatorName": "cs302", "challengeName": "challenge_4", "imageName": "image_4", "imageTag": "latest", "duration": 60, "participants": ["challenger85@google.com", "challenger74@google.com", "challenger100@google.com"], "imageRegistryLink": "gitlab.com/image_5:latest"},
     ]);
 
     db.attempt.insertMany([
-      {"challengeName": "challenge_0", "creatorName": "cs302", "imageRegistryLink": "imageRegistryLink": "gitlab.com/image_0:latest", "participant": "challenger85@google.com", "token": "token_1"},
-      {"challengeName": "challenge_0", "creatorName": "cs302", "imageRegistryLink": "imageRegistryLink": "gitlab.com/image_0:latest", "participant": "challenger74@google.com", "token": "token_2", "sshkey": "sshkey_1", "ipaddr": "ipaddr.test", "port": "1234"},
-      {"challengeName": "challenge_0", "creatorName": "cs302", "imageRegistryLink": "imageRegistryLink": "gitlab.com/image_0:latest", "participant": "challenger100@google.com", "token": "token_3"},
+      {"challengeName": "challenge_0", "creatorName": "cs302", "imageRegistryLink": "gitlab.com/image_0:latest", "participant": "challenger85@google.com", "token": "token_1"},
+      {"challengeName": "challenge_0", "creatorName": "cs302", "imageRegistryLink": "gitlab.com/image_0:latest", "participant": "challenger74@google.com", "token": "token_2", "sshkey": "sshkey_1", "ipaddr": "ipaddr.test", "port": "1234"},
+      {"challengeName": "challenge_0", "creatorName": "cs302", "imageRegistryLink": "gitlab.com/image_0:latest", "participant": "challenger100@google.com", "token": "token_3"},
     ]);
 
     db.process_engine.insertMany([
@@ -451,8 +451,8 @@ initdbScripts:
       {"corId": "653b2e8cea6d1925edee637f", "challengeName": "challenge_0", "creatorName": "cs302", "participant": "challenger85@google.com", "token": "token_1", "imageRegistryLink": "gitlab.com/image_0:latest", "event": "challengeStart", "eventStatus": "challengeStarting", "timestamp": {"year": 2024,"month": 11,"day": 3,"hours": 3,"minutes": 0,"seconds": 13,"nanos": 294758750,"timeoffset": null}}, 
       {"corId": "653b2e8cea6d1925edee637f", "challengeName": "challenge_0", "creatorName": "cs302", "participant": "challenger85@google.com", "token": "token_1", "imageRegistryLink": "gitlab.com/image_0:latest", "event": "challengeStart", "eventStatus": "challengeStartFailed", "timestamp": {"year": 2024,"month": 11,"day": 3,"hours": 4,"minutes": 0,"seconds": 13,"nanos": 294758750,"timeoffset": null}}, 
 
-      {"corId": "653b2e8cea6d1925edee637f", "challengeName": "challenge_0", "creatorName": "cs302", "participant": "challenger74@google.com", "token": "token_1", "imageRegistryLink": "gitlab.com/image_0:latest", "event": "challengeStart", "eventStatus": "challengeStarting", "timestamp": {"year": 2024,"month": 12,"day": 3,"hours": 2,"minutes": 0,"seconds": 13,"nanos": 294758750,"timeoffset": null}}, 
-      {"corId": "653b2e8cea6d1925edee637f", "challengeName": "challenge_0", "creatorName": "cs302", "participant": "challenger74@google.com", "token": "token_1", "imageRegistryLink": "gitlab.com/image_0:latest", "event": "challengeStart", "eventStatus": "challengeStarted", "timestamp": {"year": 2024,"month": 12,"day": 3,"hours": 4,"minutes": 0,"seconds": 13,"nanos": 294758750,"timeoffset": null}}, 
+      {"corId": "653b2e8cea6d1925edee637g", "challengeName": "challenge_0", "creatorName": "cs302", "participant": "challenger74@google.com", "token": "token_1", "imageRegistryLink": "gitlab.com/image_0:latest", "event": "challengeStart", "eventStatus": "challengeStarting", "timestamp": {"year": 2024,"month": 12,"day": 3,"hours": 2,"minutes": 0,"seconds": 13,"nanos": 294758750,"timeoffset": null}}, 
+      {"corId": "653b2e8cea6d1925edee637g", "challengeName": "challenge_0", "creatorName": "cs302", "participant": "challenger74@google.com", "token": "token_1", "imageRegistryLink": "gitlab.com/image_0:latest", "event": "challengeStart", "eventStatus": "challengeStarted", "timestamp": {"year": 2024,"month": 12,"day": 3,"hours": 4,"minutes": 0,"seconds": 13,"nanos": 294758750,"timeoffset": null}}, 
     ]);
 ## @param initdbScriptsConfigMap Existing ConfigMap with custom initdb scripts
 ##
